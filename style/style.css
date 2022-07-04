@@ -12,7 +12,7 @@
 }
 
 .backround-scrolling {
-  background-image: url("/pictures/landing-page-scrolling-photo.png");
+  background-image: url("../pictures/landing-page-scrolling-photo.png");
   height: 1196px !important;
   background-size: cover;
   background-position: center;
