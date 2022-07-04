@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  /* height: 100%; */
+  height: 100vh;
+  width: 100%;
+}
+
+.left-box {
+  position: relative;
+  overflow-y: scroll;
+  width: 923px;
+}
+
+.backround-scrolling {
+  background-image: url("/pictures/landing-page-scrolling-photo.png");
+  height: 1196px !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  background: #7025fb;
+  width: 100%;
+  padding-left: 80px;
+}
+
+.position-relative {
+  width: 923px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.right-box {
+  z-index: 100;
+  width: 997px;
+  background: #fd5334;
+  display: inline-block;
+  height: 1080px;
+}
+
+.header-h2 {
+  font-size: 24px;
+}
+
+.img-logo {
+  padding-left: 10px;
+}
+
+footer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 10px;
+  width: 100%;
+}
+.container-right {
+  display: block;
+  height: 100vh;
+  background: #fd5334;
+  z-index: 100;
+  width: 997px;
+}
+
+/* @media screen and (max-width: 1920px) {
+  .container-right {
+    width: 100%;
+    float: none;
+  }
+} */
+
+.btn-start {
+  display: flex;
+  align-items: center;
+}
+
+.paragrap-chess {
+  display: flex;
+  align-items: center;
+}
+
+.chess-says {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.lot-about {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  padding-left: 26px;
+}
+
+.text-who {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1720px) {
+  .text-who {
+    font-size: 60px;
+  }
+  .chess-says {
+    font-size: 50px;
+  }
+}
+
+.btn-start {
+  background: #212529;
+  border-radius: 8px;
+  width: 191px;
+  height: 53px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 102px;
+}
+
+.text-container {
+  padding: 265px 0 0 85px;
+  display: inline-block;
+}
+
+.btn-icon-left {
+  padding-left: 12px;
+}
