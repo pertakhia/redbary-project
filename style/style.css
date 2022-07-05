@@ -392,11 +392,14 @@ footer {
 
 .name-input input[type="text"]:hover {
   cursor: pointer;
-  background: #e9ecef;
+  background: #F8F9FA;
   transition: all 0.2s ease-in-out;
 }
 .name-input input[type="text"]:focus {
   outline: none;
+}
+.name-input input[type="text"]:active {
+  background: #e9ecef;
 }
 
 .email-input {
@@ -447,7 +450,7 @@ footer {
 
 .email-input input[type="email"]:hover {
   cursor: pointer;
-  background: #e9ecef;
+  background: #F8F9FA;
   transition: all 0.2s ease-in-out;
 }
 .email-input input[type="email"]:focus {
@@ -503,7 +506,7 @@ footer {
 
 .telefon-input input[type="number"]:hover {
   cursor: pointer;
-  background: #e9ecef;
+  background: #F8F9FA;
   transition: all 0.2s ease-in-out;
 }
 .telefon-input input[type="number"]:focus {
@@ -559,7 +562,7 @@ footer {
 
 .date-input input[type="date"]:hover {
   cursor: pointer;
-  background: #e9ecef;
+  background: #F8F9FA;
   transition: all 0.2s ease-in-out;
 }
 .date-input input[type="date"]:focus {
