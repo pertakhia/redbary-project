@@ -507,12 +507,12 @@ footer {
   display: none !important;
 }
 
-.telefon-input input[type="number"]:hover {
+.telefon-input input[type="tel"]:hover {
   cursor: pointer;
   background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
-.telefon-input input[type="number"]:focus {
+.telefon-input input[type="tel"]:focus {
   outline: none;
 }
 

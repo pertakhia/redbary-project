@@ -64,8 +64,8 @@
                             <label for="email">Email address </label>
                         </div>
                         <div class="telefon-input">
-                            <input type="number" id="number" name="number" required>
-                            <label for="number">Phone number</label>
+                            <input type="text" id="number" name="text" required    onkeypress="return isNumberKey(event)">
+                            <label for="text">Phone number</label>
                         </div>
                         <div class="date-input">
                             <input type="date" id="date" name="date" required>
@@ -74,11 +74,11 @@
 
                     </form>
                     <div class="btn-group">
-                        <a href="index.html"> <button type="submit" class="btn-back">
+                        <a href="index.html" onclick="onResetPersonInformation(event)"> <button type="submit" class="btn-back">
                             Back
                           </button>
                           </a>
-                        <a href="done.html"> <button type="submit" class="btn-next">
+                        <a href="done.html" onclick="onPersonInformation(event)"> <button type="submit" class="btn-next" >
                             Next
                             <img  src="pictures/btn-icon.svg" class="btn-icon-left" alt="btn-icon"/>
                           </button>
