@@ -222,6 +222,9 @@ footer {
   align-items: center;
 }
 .person-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background: #ffffff;
@@ -392,7 +395,7 @@ footer {
 
 .name-input input[type="text"]:hover {
   cursor: pointer;
-  background: #F8F9FA;
+  background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
 .name-input input[type="text"]:focus {
@@ -450,7 +453,7 @@ footer {
 
 .email-input input[type="email"]:hover {
   cursor: pointer;
-  background: #F8F9FA;
+  background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
 .email-input input[type="email"]:focus {
@@ -506,7 +509,7 @@ footer {
 
 .telefon-input input[type="number"]:hover {
   cursor: pointer;
-  background: #F8F9FA;
+  background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
 .telefon-input input[type="number"]:focus {
@@ -562,7 +565,7 @@ footer {
 
 .date-input input[type="date"]:hover {
   cursor: pointer;
-  background: #F8F9FA;
+  background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
 .date-input input[type="date"]:focus {
@@ -627,9 +630,79 @@ footer {
   .form-container {
     width: 500px;
   }
-  .btn-group{
+  .btn-group {
     width: 500px;
   }
 }
-  
 
+/* done style */
+
+.backround-scrolling-chess-down {
+  background-image: url("../pictures/background-last.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-text-done {
+  position: absolute;
+  width: 615px;
+  height: 83px;
+  left: 117px;
+  top: 261px;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #212529;
+}
+.background-paragrap-done {
+  position: absolute;
+  width: 266px;
+  height: 33px;
+  left: 466px;
+  top: 376px;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #093f68;
+}
+
+.background-check {
+  background: #e9faf1;
+}
+
+.btn-done {
+  width: 99px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #212529;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .background-text-done {
+    left: 12px;
+    font-size: 24px;
+  }
+  .background-paragrap-done {
+    left: 304px;
+  }
+}
