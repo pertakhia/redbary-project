@@ -53,6 +53,19 @@ function isNumberKey(evt) {
   return true;
 }
 
+function avtoSavePersonInformation(){
+  let personInformation = {
+    name: personName.value,
+    email: personEmail.value,
+    phone: personPhone.value,
+    date: personDate.value,
+  };
+    localStorage.setItem(
+      "personInformation",
+      JSON.stringify(personInformation)
+    )
+}
+
 const onPersonInformation = (event) => {
   event.preventDefault();
   let errorMessageAll = ''
@@ -137,6 +150,7 @@ personName.addEventListener("input", (event) => {
     personName.nextElementSibling.nextElementSibling.style.display = "none";
     personInfoBtn.style.setProperty("background-color", "#FFFFFF", "important");
   }
+  avtoSavePersonInformation();
   validationAllPersonalInfo();
 });
 
@@ -168,6 +182,7 @@ personEmail.addEventListener("input", (event) => {
   } else {
     personEmail.nextElementSibling.nextElementSibling.style.display = "none";
   }
+  avtoSavePersonInformation();
   validationAllPersonalInfo();
 });
 
@@ -200,6 +215,7 @@ personPhone.addEventListener("input", (event) => {
   } else {
     personPhone.nextElementSibling.nextElementSibling.style.display = "none";
   }
+  avtoSavePersonInformation();
   validationAllPersonalInfo();
 });
 
@@ -233,6 +249,7 @@ personDate.addEventListener("input", (event) => {
   } else {
     personDate.nextElementSibling.nextElementSibling.style.display = "none";
   }
+  avtoSavePersonInformation();
   validationAllPersonalInfo();
 });
 
