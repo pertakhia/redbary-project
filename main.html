@@ -40,7 +40,11 @@
                     </div>
                     <div class="check-process">
                         <div class="person-btn-container">
-                            <button type="button" class="person-btn">1</button>
+                            <button type="button" class="person-btn"> <span
+                                    class="person-btn-text">1</span>
+                                <img src="pictures/check-all.svg"
+                                    alt="check-all" class="show-checked-btn" />
+                            </button>
                             <p class="person-paragrap">Personal information</p>
                         </div>
                         <div class="line"></div>
@@ -56,37 +60,62 @@
                     </div>
                     <form class="form-container">
                         <div class="name-input">
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required
+                                autocomplete="off">
                             <label for="name">Name</label>
+                            <img src="pictures/check-circle-fill.svg" alt="icon"
+                                class="succes-icon-name" />
                         </div>
                         <div class="email-input">
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required
+                                autocomplete="off">
                             <label for="email">Email address </label>
+                            <img src="pictures/check-circle-fill.svg" alt="icon"
+                                class="succes-icon-name" />
                         </div>
                         <div class="telefon-input">
-                            <input type="text" id="number" name="text" required    onkeypress="return isNumberKey(event)">
-                            <label for="text">Phone number</label>
+                            <input type="text" id="number" name="text" required
+                                onkeypress="return isNumberKey(event)"
+                                autocomplete="off">
+                            <label for="number">Phone number</label>
+                            <img src="pictures/check-circle-fill.svg" alt="icon"
+                                class="succes-icon-name" />
                         </div>
                         <div class="date-input">
-                            <input type="date" id="date" name="date" required>
-                            <label for="date">Phone number</label>
+                            <input type="text" id="date" name="date" required
+                                autocomplete="off">
+                            <label for="date">Date of birth</label>
+                            <img src="pictures/check-circle-fill.svg" alt="icon"
+                                class="succes-icon-name" />
                         </div>
 
                     </form>
                     <div class="btn-group">
-                        <a href="index.html" onclick="onResetPersonInformation(event)"> <button type="submit" class="btn-back">
-                            Back
-                          </button>
-                          </a>
-                        <a href="done.html" onclick="onPersonInformation(event)"> <button type="submit" class="btn-next" >
-                            Next
-                            <img  src="pictures/btn-icon.svg" class="btn-icon-left" alt="btn-icon"/>
-                          </button>
+                        <a href="index.html"
+                            onclick="onResetPersonInformation(event)"> <button
+                                type="submit" class="btn-back">
+                                Back
+                            </button>
+                        </a>
+                        <a href="done.html"
+                            onclick="onPersonInformation(event)"> <button
+                                type="submit" class="btn-next">
+                                Next
+                                <img src="pictures/btn-icon.svg"
+                                    class="btn-icon-left" alt="btn-icon" />
+                            </button>
                         </a>
                     </div>
                 </div>
             </article>
         </section>
+        <div class="error-modal-message">
+            <div class="error-modal-center">
+                <h1 class="error-message-header">Invalid email</h1>
+                <p class="error-message-paragrap">Please enter valid email
+                    address</p>
+            </div>
+        </div>
         <script src="javascript/main.js"></script>
     </body>
 </html>

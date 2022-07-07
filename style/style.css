@@ -395,7 +395,7 @@ footer {
 
 .name-input input[type="text"]:hover {
   cursor: pointer;
-  background: #f8f9fa;
+  background: #f8f9fa !important;
   transition: all 0.2s ease-in-out;
 }
 .name-input input[type="text"]:focus {
@@ -507,12 +507,12 @@ footer {
   display: none !important;
 }
 
-.telefon-input input[type="tel"]:hover {
+.telefon-input input[type="text"]:hover {
   cursor: pointer;
   background: #f8f9fa;
   transition: all 0.2s ease-in-out;
 }
-.telefon-input input[type="tel"]:focus {
+.telefon-input input[type="text"]:focus {
   outline: none;
 }
 
@@ -633,6 +633,65 @@ footer {
   .btn-group {
     width: 500px;
   }
+}
+
+.succes-icon-name {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.show-checked-btn {
+  display: none;
+}
+
+.error-modal-message {
+  position: absolute;
+  top: 0;
+  background: #16151526;
+  left: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  right: 0;
+}
+
+.error-modal-center {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  padding: 10px 15px;
+}
+
+.error-message-paragrap {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+  margin-top: 10px;
+}
+.error-message-header {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  border-bottom: 1px solid black;
+  color: #dc3545;
 }
 
 /* done style */
