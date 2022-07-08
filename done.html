@@ -29,18 +29,22 @@
                     </header>
                 </div>
                 <div class="backround-scrolling-chess-down"></div>
-                <h1 class="background-text-done">“Many have become chess masters; <br> no one has become the master of chess.”</h1>
+                <h1 class="background-text-done">“Many have become chess
+                    masters; <br> no one has become the master of chess.”</h1>
                 <p class="background-paragrap-done">- Siegbert Tarrasch</p>
             </article>
             <article class="container-right-main">
                 <div class="scroll-container">
                     <div class="header-white">
-                        <h2 class="heder-white-text">First step is done, continue to finish onboarding</h2>
+                        <h2 class="heder-white-text">First step is done,
+                            continue to finish onboarding</h2>
                     </div>
                     <div class="check-process">
                         <div class="person-btn-container">
-                            <button type="button" class="person-btn background-check">
-                                <img src="pictures/check-all.svg" alt="check-all" />
+                            <button type="button" class="person-btn
+                                background-check">
+                                <img src="pictures/check-all.svg"
+                                    alt="check-all" />
                             </button>
                             <p class="person-paragrap">Personal information</p>
                         </div>
@@ -55,22 +59,52 @@
                         <p class="information-paragrap">This is basic informaton
                             fields</p>
                     </div>
-                    <form class="form-container">
-                      <!-- აქ საჭიროა ინპუთები -->
+                    <form class="form-container-done">
+                        <div class="custom-select">
+                            <select name="experience" id="default">
+                                <option value="default">level of knowledge *</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Professional">Professional</option>
+                            </select>
+                        </div>
+                        <div class="custom-select">
+                            <select name="experience" id="default">
+                                <option value="default">level of knowledge *</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Professional">Professional</option>
+                            </select>
+                        </div>
                     </form>
+                    <div class="radio-box">
+                        <h3 class="radio-box-header">Have you participated in the Redberry Championship?
+                            <span style="color: red">*</span></h3>
+                        <div class="radio-group">
+                            <input type="radio" id="Yes"
+                                name="contact" value="Yes"  checked>
+                            <label for="contactChoice1">Yes</label>
+
+                            <input type="radio" id="No"
+                                name="contact" value="No">
+                            <label for="contactChoice2">No</label>
+                        </div>
+                    </div>
                     <div class="btn-group">
-                        <a href="main.html" > <button type="submit" class="btn-back">
-                            Back
-                          </button>
-                          </a>
-                        <a href="main.html"> <button type="submit" class="btn-done">
-                            Done
-                          </button>
+                        <a href="main.html"> <button type="submit"
+                                class="btn-back">
+                                Back
+                            </button>
+                        </a>
+                        <a href="main.html"> <button type="submit"
+                                class="btn-done">
+                                Done
+                            </button>
                         </a>
                     </div>
                 </div>
             </article>
         </section>
-        <!-- <script src="javascript/main.js"></script> -->
+        <script src="javascript/done.js"></script>
     </body>
 </html>

@@ -765,3 +765,147 @@ footer {
     left: 304px;
   }
 }
+
+.options {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+/* select-custum   */
+.custom-select {
+  position: relative;
+  width: 392px;
+  margin-right: 23px;
+}
+@media screen and (max-width: 1600px) {
+  .custom-select {
+    width: 279px;
+  }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529 !important;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #212529 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #212529 transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*style the items (options), including the selected item:*/
+
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.select-items div:first-child {
+  margin-top: 20px;
+}
+.select-items div:nth-child(2) {
+  margin: 10px 0;
+}
+.select-items div:last-child {
+  margin-bottom: 20px;
+}
+.select-items div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  height: 45px;
+  padding-left: 20px;
+  /* identical to box height, or 30px */
+  color: #000000;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  width: 392px;
+  height: auto;
+  top: 46px;
+  left: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background: #f7f7f9;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 150% !important;
+  color: #000000 !important;
+}
+
+.form-container-done {
+  margin-top: 85px;
+  margin-left: 48px;
+  width: 798px;
+  display: flex;
+  margin-bottom: 88px;
+}
+
+.radio-box {
+  margin-left: 37px;
+  margin-bottom: 174px;
+}
+.radio-box-header {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+  padding-left: 16px;
+}
+
+.radio-group {
+  margin-top: 22px;
+  padding-left: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+}

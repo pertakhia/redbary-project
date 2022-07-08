@@ -11,20 +11,6 @@ const errorHeader = document.querySelector(".error-message-header");
 const errordescription = document.querySelector(".error-message-paragrap");
 
 
-console.log("errror", errorMessage);
-// console.log("pers",personName.nextElementSibling.style.display = "none");
-
-let url = "https://chess-tournament-api.devtest.ge/api/grandmasters";
-
-async function fetchAsync(url) {
-  let response = await fetch(url);
-  let data = await response.json();
-  console.log(data);
-  return data;
-}
-
-fetchAsync(url);
-
 function validate(name) {
   var regex = /^[a-zA-Z ]{2,30}$/;
   return regex.test(name);
@@ -112,7 +98,10 @@ const onPersonInformation = (event) => {
     name: personName.value,
     email: personEmail.value,
     phone: personPhone.value,
-    date: personDate.value,
+    date_of_birth: personDate.value,
+    experience_level: "beginner",
+    already_participated: true,
+    character_id: 2,
   };
   if (
     validate(personName.value) &&
@@ -295,7 +284,7 @@ const savePersonInformation = () => {
     personName.value = personInformation.name;
     personEmail.value = personInformation.email;
     personPhone.value = personInformation.phone;
-    personDate.value = personInformation.date;
+    personDate.value = personInformation.date_of_birth;
   }
   validationAllPersonalInfo();
 };
