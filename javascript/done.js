@@ -104,7 +104,7 @@ function createLIst() {
         imageContainer.classList.add("image-container")
         listItemImage = document.createElement("img")
         listItemImage.classList.add("character-image")
-        listItemImage.src = data[i].image
+        listItemImage.src = `.${data[i].image}`
         listItem.appendChild(listItemName)
         imageContainer.appendChild(listItemImage)
         listItem.appendChild(imageContainer)
