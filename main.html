@@ -1,121 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style/reset.css" />
-        <link rel="stylesheet" href="style/style.css" />
-        <title>experience</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Open+Sans&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <article class="left-box-main">
+        <div class="position-relative">
+          <header>
+            <img src="pictures/Vector.png" alt="icon" />
+            <img
+              class="img-logo"
+              src="pictures/Redberry-Knight-Cup.png"
+              alt="logo"
             />
-    </head>
-
-    <body>
-        <section class="container">
-            <article class="left-box-main">
-                <div class="position-relative">
-                    <header>
-                        <img src="pictures/Vector.png" alt="icon" />
-                        <img
-                            class="img-logo"
-                            src="pictures/Redberry-Knight-Cup.png"
-                            alt="logo"
-                            />
-                    </header>
-                </div>
-                <div class="backround-scrolling-chess"></div>
-                <h1 class="background-text">“When you see a good move, look for
-                    a better one.”</h1>
-                <p class="background-paragrap">-Emanuel Lasker</p>
-            </article>
-            <article class="container-right-main">
-                <div class="scroll-container">
-                    <div class="header-white">
-                        <h2 class="heder-white-text">Start creating your account</h2>
-                    </div>
-                    <div class="check-process">
-                        <div class="person-btn-container">
-                            <button type="button" class="person-btn"> <span
-                                    class="person-btn-text">1</span>
-                                <img src="pictures/check-all.svg"
-                                    alt="check-all" class="show-checked-btn" />
-                            </button>
-                            <p class="person-paragrap">Personal information</p>
-                        </div>
-                        <div class="line"></div>
-                        <div class="person-btn-container">
-                            <button type="button" class="person-btn-experience">2</button>
-                            <p class="person-paragrap">Chess experience</p>
-                        </div>
-                    </div>
-                    <div class="perons-information">
-                        <h1 class="information-text">Personal information</h1>
-                        <p class="information-paragrap">This is basic informaton
-                            fields</p>
-                    </div>
-                    <form class="form-container">
-                        <div class="name-input">
-                            <input type="text" id="name" name="name" required
-                                autocomplete="off">
-                            <label for="name">Name</label>
-                            <img src="pictures/check-circle-fill.svg" alt="icon"
-                                class="succes-icon-name" />
-                        </div>
-                        <div class="email-input">
-                            <input type="email" id="email" name="email" required
-                                autocomplete="off">
-                            <label for="email">Email address </label>
-                            <img src="pictures/check-circle-fill.svg" alt="icon"
-                                class="succes-icon-name" />
-                        </div>
-                        <div class="telefon-input">
-                            <input type="text" id="number" name="text" required
-                                onkeypress="return isNumberKey(event)"
-                                autocomplete="off">
-                            <label for="number">Phone number</label>
-                            <img src="pictures/check-circle-fill.svg" alt="icon"
-                                class="succes-icon-name" />
-                        </div>
-                        <div class="date-input">
-                            <input type="text" id="date" name="date" required
-                                autocomplete="off">
-                            <label for="date">Date of birth</label>
-                            <img src="pictures/check-circle-fill.svg" alt="icon"
-                                class="succes-icon-name" />
-                        </div>
-
-                    </form>
-                    <div class="btn-group">
-                        <a href="index.html"
-                            onclick="onResetPersonInformation(event)"> <button
-                                type="submit" class="btn-back">
-                                Back
-                            </button>
-                        </a>
-                        <a href="done.html"
-                            onclick="onPersonInformation(event)"> <button
-                                type="submit" class="btn-next">
-                                Next
-                                <img src="pictures/btn-icon.svg"
-                                    class="btn-icon-left" alt="btn-icon" />
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <div class="error-modal-message">
-            <div class="error-modal-center">
-                <h1 class="error-message-header">Invalid email</h1>
-                <p class="error-message-paragrap">Please enter valid email
-                    address</p>
-            </div>
+          </header>
         </div>
-        <script src="javascript/main.js"></script>
-    </body>
+        <div class="backround-scrolling-chess"></div>
+        <h1 class="background-text">
+          “When you see a good move, look for a better one.”
+        </h1>
+        <p class="background-paragrap">-Emanuel Lasker</p>
+      </article>
+      <article class="container-right-main">
+        <div class="scroll-container">
+          <div class="header-white">
+            <h2 class="heder-white-text">Start creating your account</h2>
+          </div>
+          <div class="check-process">
+            <div class="person-btn-container">
+              <button type="button" class="person-btn">
+                <span class="person-btn-text">1</span>
+                <img
+                  src="pictures/check-all.svg"
+                  alt="check-all"
+                  class="show-checked-btn"
+                />
+              </button>
+              <p class="person-paragrap">Personal information</p>
+            </div>
+            <div class="line"></div>
+            <div class="person-btn-container">
+              <button type="button" class="person-btn-experience">2</button>
+              <p class="person-paragrap">Chess experience</p>
+            </div>
+          </div>
+          <div class="perons-information">
+            <h1 class="information-text">Personal information</h1>
+            <p class="information-paragrap">This is basic informaton fields</p>
+          </div>
+          <form class="form-container">
+            <div class="name-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="off"
+              />
+              <label for="name">Name</label>
+              <img
+                src="pictures/check-circle-fill.svg"
+                alt="icon"
+                class="succes-icon-name"
+              />
+            </div>
+            <div class="email-input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="off"
+              />
+              <label for="email">Email address </label>
+              <img
+                src="pictures/check-circle-fill.svg"
+                alt="icon"
+                class="succes-icon-name"
+              />
+            </div>
+            <div class="telefon-input">
+              <input
+                type="text"
+                id="number"
+                name="text"
+                required
+                onkeypress="return isNumberKey(event)"
+                autocomplete="off"
+              />
+              <label for="number">Phone number</label>
+              <img
+                src="pictures/check-circle-fill.svg"
+                alt="icon"
+                class="succes-icon-name"
+              />
+            </div>
+            <div class="date-input">
+              <input
+                type="text"
+                id="date"
+                name="date"
+                required
+                autocomplete="off"
+              />
+              <label for="date">Date of birth</label>
+              <img
+                src="pictures/check-circle-fill.svg"
+                alt="icon"
+                class="succes-icon-name"
+              />
+            </div>
+          </form>
+          <div class="btn-group">
+            <a href="index.html">
+              <button type="submit" class="btn-back">Back</button>
+            </a>
+            <a href="done.html" onclick="onPersonInformation(event)">
+              <button type="submit" class="btn-next">
+                Next
+                <img
+                  src="pictures/btn-icon.svg"
+                  class="btn-icon-left"
+                  alt="btn-icon"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="error-modal-message">
+      <div class="error-modal-center">
+        <h1 class="error-message-header">Invalid email</h1>
+        <p class="error-message-paragrap">Please enter valid email address</p>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
 </html>

@@ -1,110 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style/reset.css" />
-        <link rel="stylesheet" href="style/style.css" />
-        <title>boarding</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Open+Sans&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>boarding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <article class="left-box-main">
+        <div class="position-relative">
+          <header>
+            <img src="pictures/Vector.png" alt="icon" />
+            <img
+              class="img-logo"
+              src="pictures/Redberry-Knight-Cup.png"
+              alt="logo"
             />
-    </head>
+          </header>
+        </div>
+        <div class="backround-scrolling-chess-down"></div>
+        <h1 class="background-text-done">
+          “Many have become chess masters; <br />
+          no one has become the master of chess.”
+        </h1>
+        <p class="background-paragrap-done">- Siegbert Tarrasch</p>
+      </article>
+      <article class="container-right-main">
+        <div class="scroll-container">
+          <div class="header-white">
+            <h2 class="heder-white-text">
+              First step is done, continue to finish onboarding
+            </h2>
+          </div>
+          <div class="check-process">
+            <div class="person-btn-container">
+              <button type="button" class="person-btn background-check">
+                <img src="pictures/check-all.svg" alt="check-all" />
+              </button>
+              <p class="person-paragrap">Personal information</p>
+            </div>
+            <div class="line"></div>
+            <div class="person-btn-container">
+              <button type="button" class="person-btn-experience">2</button>
+              <p class="person-paragrap">Chess experience</p>
+            </div>
+          </div>
+          <div class="perons-information">
+            <h1 class="information-text">Personal information</h1>
+            <p class="information-paragrap">This is basic informaton fields</p>
+          </div>
+          <form class="form-container-done">
+            <div class="custom-select">
+              <select name="experience" id="default">
+                <option value="default">level of knowledge *</option>
+                <option value="beginner">beginner</option>
+                <option value="normal">normal</option>
+                <option value="professional">professional</option>
+              </select>
+            </div>
+            <div class="custom-select-data">
+                <div class="select-selected-data">Choose your character <span style="color: red">*</span></div>
+                <div class="list-container">
+                    <div class="flex-start">
+                      (Total <span class="data-total">2</span> )
+                    </div>
+                    <div class="list-character-id">
+                      
+                      </div>
+                    </div>
+            </div>
+          </form>
+          <div class="radio-box">
+            <h3 class="radio-box-header">
+              Have you participated in the Redberry Championship?
+              <span style="color: red">*</span>
+            </h3>
+            <div class="radio-group">
+              <input type="radio" id="Yes" name="contact" value="true" checked />
+              <label for="contactChoice1">Yes</label>
 
-    <body>
-        <section class="container">
-            <article class="left-box-main">
-                <div class="position-relative">
-                    <header>
-                        <img src="pictures/Vector.png" alt="icon" />
-                        <img
-                            class="img-logo"
-                            src="pictures/Redberry-Knight-Cup.png"
-                            alt="logo"
-                            />
-                    </header>
-                </div>
-                <div class="backround-scrolling-chess-down"></div>
-                <h1 class="background-text-done">“Many have become chess
-                    masters; <br> no one has become the master of chess.”</h1>
-                <p class="background-paragrap-done">- Siegbert Tarrasch</p>
-            </article>
-            <article class="container-right-main">
-                <div class="scroll-container">
-                    <div class="header-white">
-                        <h2 class="heder-white-text">First step is done,
-                            continue to finish onboarding</h2>
-                    </div>
-                    <div class="check-process">
-                        <div class="person-btn-container">
-                            <button type="button" class="person-btn
-                                background-check">
-                                <img src="pictures/check-all.svg"
-                                    alt="check-all" />
-                            </button>
-                            <p class="person-paragrap">Personal information</p>
-                        </div>
-                        <div class="line"></div>
-                        <div class="person-btn-container">
-                            <button type="button" class="person-btn-experience">2</button>
-                            <p class="person-paragrap">Chess experience</p>
-                        </div>
-                    </div>
-                    <div class="perons-information">
-                        <h1 class="information-text">Personal information</h1>
-                        <p class="information-paragrap">This is basic informaton
-                            fields</p>
-                    </div>
-                    <form class="form-container-done">
-                        <div class="custom-select">
-                            <select name="experience" id="default">
-                                <option value="default">level of knowledge *</option>
-                                <option value="Beginner">Beginner</option>
-                                <option value="Intermediate">Intermediate</option>
-                                <option value="Professional">Professional</option>
-                            </select>
-                        </div>
-                        <div class="custom-select">
-                            <select name="experience" id="default">
-                                <option value="default">level of knowledge *</option>
-                                <option value="Beginner">Beginner</option>
-                                <option value="Intermediate">Intermediate</option>
-                                <option value="Professional">Professional</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="radio-box">
-                        <h3 class="radio-box-header">Have you participated in the Redberry Championship?
-                            <span style="color: red">*</span></h3>
-                        <div class="radio-group">
-                            <input type="radio" id="Yes"
-                                name="contact" value="Yes"  checked>
-                            <label for="contactChoice1">Yes</label>
-
-                            <input type="radio" id="No"
-                                name="contact" value="No">
-                            <label for="contactChoice2">No</label>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a href="main.html"> <button type="submit"
-                                class="btn-back">
-                                Back
-                            </button>
-                        </a>
-                        <a href="main.html"> <button type="submit"
-                                class="btn-done">
-                                Done
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <script src="javascript/done.js"></script>
-    </body>
+              <input type="radio" id="No" name="contact" value="false" />
+              <label for="contactChoice2">No</label>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="main.html">
+              <button type="submit" class="btn-back">Back</button>
+            </a>
+            <a href="finish.html">
+              <button type="submit" class="btn-done">Done</button>
+            </a>
+          </div>
+          
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="javascript/done.js"></script>
+  </body>
 </html>
