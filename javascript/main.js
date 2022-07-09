@@ -16,7 +16,7 @@ function validate(name) {
 }
 
 function validEmail(email) {
-  var regex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/
+  var regex = /^\w+([\.-]?\w+)*@redberry\.ge$/
   return regex.test(email)
 }
 
