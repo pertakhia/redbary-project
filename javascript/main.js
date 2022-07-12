@@ -88,7 +88,7 @@ const onPersonInformation = (event) => {
     personEmail.style.color = "#DC3545"
     errorMessage.style.display = "flex"
     errorMessageAll += "Error in Email;"
-    errorMesaageDescription += "Email is not valid or empty; "
+    errorMesaageDescription += "Email is example@redberry.ge; "
   }
   if (!validNumber(personPhone.value)) {
     personPhone.style.background = "#FFEFEF"
